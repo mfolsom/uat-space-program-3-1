@@ -5,7 +5,7 @@ function betterCountdown() {
         if (i == 11) {
             //display Blastoff when countdown stops
             setTimeout(function () {
-                document.getElementById("countdownTimer").innerHTML = "Blastoff!!!";
+                document.getElementById("countdownTimer").innerHTML = "<span style='color:blue'>Blastoff!!</span>";
             }, 1000 * i);
             //display warning when less than 5 seconds
         } else if (i > 6) {
@@ -23,6 +23,8 @@ function betterCountdown() {
         }
     }
 }
+
+//old countdown timer
 
 //countdown timer should run 10 to 1 then blastoff and take 10 seconds to complete full countdown
 // function startCountdown() {
